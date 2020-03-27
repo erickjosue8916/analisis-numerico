@@ -1,0 +1,6 @@
+C:\Users\torre\OneDrive\Escritorio\c#\Tarea1_cuarentena\Ejercicio3_Menor-a-mayor\Ejercicio3_Menor-a-mayor\bin\Debug\Ejercicio3_Menor-a-mayor.exe.config
+C:\Users\torre\OneDrive\Escritorio\c#\Tarea1_cuarentena\Ejercicio3_Menor-a-mayor\Ejercicio3_Menor-a-mayor\bin\Debug\Ejercicio3_Menor-a-mayor.exe
+C:\Users\torre\OneDrive\Escritorio\c#\Tarea1_cuarentena\Ejercicio3_Menor-a-mayor\Ejercicio3_Menor-a-mayor\bin\Debug\Ejercicio3_Menor-a-mayor.pdb
+C:\Users\torre\OneDrive\Escritorio\c#\Tarea1_cuarentena\Ejercicio3_Menor-a-mayor\Ejercicio3_Menor-a-mayor\obj\Debug\Ejercicio3_Menor-a-mayor.exe
+C:\Users\torre\OneDrive\Escritorio\c#\Tarea1_cuarentena\Ejercicio3_Menor-a-mayor\Ejercicio3_Menor-a-mayor\obj\Debug\Ejercicio3_Menor-a-mayor.pdb
+C:\Users\torre\OneDrive\Escritorio\c#\Tarea1_cuarentena\Ejercicio3_Menor-a-mayor\Ejercicio3_Menor-a-mayor\obj\Debug\Ejercicio3_Menor-a-mayor.csprojAssemblyReference.cache
