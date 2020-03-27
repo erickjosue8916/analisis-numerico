@@ -1,0 +1,11 @@
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/bin/Debug/netcoreapp3.1/VentaProductos
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/bin/Debug/netcoreapp3.1/VentaProductos.deps.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/bin/Debug/netcoreapp3.1/VentaProductos.runtimeconfig.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/bin/Debug/netcoreapp3.1/VentaProductos.runtimeconfig.dev.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/bin/Debug/netcoreapp3.1/VentaProductos.dll
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/bin/Debug/netcoreapp3.1/VentaProductos.pdb
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/obj/Debug/netcoreapp3.1/VentaProductos.csprojAssemblyReference.cache
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/obj/Debug/netcoreapp3.1/VentaProductos.AssemblyInfoInputs.cache
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/obj/Debug/netcoreapp3.1/VentaProductos.AssemblyInfo.cs
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/obj/Debug/netcoreapp3.1/VentaProductos.dll
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/VentaProductos/VentaProductos/obj/Debug/netcoreapp3.1/VentaProductos.pdb

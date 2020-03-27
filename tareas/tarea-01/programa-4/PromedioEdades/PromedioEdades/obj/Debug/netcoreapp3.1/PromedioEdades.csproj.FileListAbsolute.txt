@@ -1,0 +1,11 @@
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/bin/Debug/netcoreapp3.1/PromedioEdades
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/bin/Debug/netcoreapp3.1/PromedioEdades.deps.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/bin/Debug/netcoreapp3.1/PromedioEdades.runtimeconfig.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/bin/Debug/netcoreapp3.1/PromedioEdades.runtimeconfig.dev.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/bin/Debug/netcoreapp3.1/PromedioEdades.dll
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/bin/Debug/netcoreapp3.1/PromedioEdades.pdb
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/obj/Debug/netcoreapp3.1/PromedioEdades.csprojAssemblyReference.cache
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/obj/Debug/netcoreapp3.1/PromedioEdades.AssemblyInfoInputs.cache
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/obj/Debug/netcoreapp3.1/PromedioEdades.AssemblyInfo.cs
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/obj/Debug/netcoreapp3.1/PromedioEdades.dll
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-5/PromedioEdades/PromedioEdades/obj/Debug/netcoreapp3.1/PromedioEdades.pdb
