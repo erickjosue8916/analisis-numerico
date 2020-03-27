@@ -1,3 +1,3 @@
-# Programa 4
-> Cree un programa que le permita calcular el promedio de edades de un grupo de personas
-> tomando en cuenta que todas deben de ser mayores de 18 años
+# Programa 2
+> Cree un programa en c# que permita almacenar 10 numeros y calcule la suma
+> de los mismos.
