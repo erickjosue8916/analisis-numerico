@@ -17,10 +17,12 @@ namespace Ejercicio1_Mayor_a_menor
             num = new int[10];
             for (int i = 0; i < num.Length; i++)
             {
-                Console.WriteLine("Ingrese el numero en la posicion " + i + ": ");
-                num[i] = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Ingrese el numero en la posicion " + i + ": ");
+                    num[i] = int.Parse(Console.ReadLine());
+              
             }
         }
+
         public void Ordenar()
         {
             for(int j=0;j<9; j++)
