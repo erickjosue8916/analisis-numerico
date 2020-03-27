@@ -52,9 +52,9 @@ namespace VentaProductos
         // Fill restand properties
         public void SetData()
         {
-            total = list.Select(product => product.GetTotal()).ToList().Sum();
+            total = Math.Round(list.Select(product => product.GetTotal()).ToList().Sum(), 2);
             bestSellingProduct = list.OrderBy(product => product.GetProduct().GetPrice()).ToList().First();
-            averaguePriceProducts = list.Select(product => product.GetProduct().GetPrice()).ToList().Sum() / quantity;
+            averaguePriceProducts = list.Average(product => product.GetProduct().GetPrice());
             /*for (int i = 0; i < list.Length; i++)
             {
                 ProductSellList product = list[i]; // total current product
@@ -73,7 +73,7 @@ namespace VentaProductos
             foreach (ProductSellList product in list)
                 objectString += $"\n-> {product.ToString()}";
 
-            objectString += $"\nTotal de venta: {total}";
+            objectString += $"\nTotal de venta: ${total}";
             objectString += $"\nProducto mas vendido: {bestSellingProduct.GetProduct().GetName()} ";
             objectString += $"\nPromedio de precios: ${averaguePriceProducts}";
             return objectString;
@@ -161,7 +161,7 @@ namespace VentaProductos
             catch (Exception e)
             {
                 ConsoleMessage.Print("Entrada invalida", 3);
-                return GetIntegerByConsole(message);
+                return GetDoubleByConsole(message);
             }
         }
 
