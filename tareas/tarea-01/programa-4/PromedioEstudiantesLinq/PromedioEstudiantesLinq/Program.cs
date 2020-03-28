@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace PromedioEdades
 {
@@ -7,15 +8,14 @@ namespace PromedioEdades
         static void Main(string[] args)
         {
             int counter;
-            int sumAges;
-            double promAges;
+            double averague;
             int groupLength;
             do
             {
                 groupLength = Data.GetIntegerByConsole("Escribe la cantidad de personas en el grupo: ");
-                if (groupLength < 1) ConsoleMessage.Print("Escribe una cantidad mayor que 0", 3);
+                if (groupLength < 1) ConsoleMessage.Print("Escribe un cantidad valida: ", 3);
             } while (groupLength < 1);
-
+            
             int[] group = new int[groupLength];
             String message;
 
@@ -24,20 +24,16 @@ namespace PromedioEdades
             {
                 group[counter] = Data.GetIntegerByConsole($"Escribe la edad del la persona {counter + 1} en el grupo: ");
                 if (group[counter] >= 18) counter++;
-               
+                else ConsoleMessage.Print("La edad debe ser mayor que 18", 3);
             } while (counter < groupLength);
 
-            sumAges = 0;
             
             message = $"El promedio de las edades ";
             foreach (int age in group)
-            {
-                sumAges += age;
                 message += $"{age} ";
-            }
 
-            promAges = sumAges / groupLength;
-            message += $"es: {promAges}";
+            averague = group.Average();
+            message += $"es: {averague}";
             ConsoleMessage.Print(message, 3);
         }
         String exit = Console.ReadLine();

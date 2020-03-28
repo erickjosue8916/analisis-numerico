@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/PromedioEdades.csproj": {}
+    "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj": {}
   },
   "projects": {
-    "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/PromedioEdades.csproj": {
+    "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/PromedioEdades.csproj",
-        "projectName": "PromedioEdades",
-        "projectPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/PromedioEdades.csproj",
+        "projectUniqueName": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj",
+        "projectName": "PromedioEstudiantesLinq",
+        "projectPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj",
         "packagesPath": "/home/erick/.nuget/packages/",
-        "outputPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/obj/",
+        "outputPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/erick/.config/NuGet/NuGet.Config"

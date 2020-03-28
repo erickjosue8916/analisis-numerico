@@ -1,0 +1,11 @@
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/bin/Debug/netcoreapp3.1/PromedioEstudiantesLinq
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/bin/Debug/netcoreapp3.1/PromedioEstudiantesLinq.deps.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/bin/Debug/netcoreapp3.1/PromedioEstudiantesLinq.runtimeconfig.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/bin/Debug/netcoreapp3.1/PromedioEstudiantesLinq.runtimeconfig.dev.json
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/bin/Debug/netcoreapp3.1/PromedioEstudiantesLinq.dll
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/bin/Debug/netcoreapp3.1/PromedioEstudiantesLinq.pdb
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/Debug/netcoreapp3.1/PromedioEstudiantesLinq.csprojAssemblyReference.cache
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/Debug/netcoreapp3.1/PromedioEstudiantesLinq.AssemblyInfoInputs.cache
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/Debug/netcoreapp3.1/PromedioEstudiantesLinq.AssemblyInfo.cs
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/Debug/netcoreapp3.1/PromedioEstudiantesLinq.dll
+/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/Debug/netcoreapp3.1/PromedioEstudiantesLinq.pdb

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/PromedioEdades.csproj",
-    "projectName": "PromedioEdades",
-    "projectPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/PromedioEdades.csproj",
-    "outputPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEdades/PromedioEdades/obj/",
+    "projectUniqueName": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj",
+    "projectName": "PromedioEstudiantesLinq",
+    "projectPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj",
+    "outputPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
