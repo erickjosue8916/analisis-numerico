@@ -8,18 +8,35 @@ namespace Ejercicio1_Mayor_a_menor
 {
     class Program
     {
-        private int[] num;
+        private int[] arreglo;
+        int dato;
+        bool repetido;
         public void Ingresar()
         {
             Console.WriteLine("Orden de 10 numeros de Mayor a Menor");
             Console.Write("********************************************\n\n");
 
-            num = new int[10];
-            for (int i = 0; i < num.Length; i++)
+            arreglo = new int[10];
+            for (int i = 0; i < arreglo.Length; i++)
             {
-                    Console.WriteLine("Ingrese el numero en la posicion " + i + ": ");
-                    num[i] = int.Parse(Console.ReadLine());
-              
+                do
+                {
+                    Console.WriteLine("Ingrese el numero en la posicion " + i + ":");
+                    dato = int.Parse(Console.ReadLine());
+                    arreglo[i] = dato;
+                    repetido = false;
+
+                    for (int j = 0; j < i; j++)
+                    {
+                        if (arreglo[j] == dato)
+                        {
+                            repetido = true;
+                            Console.WriteLine("\nEL NUMERO INGRESADO YA EXISTE, INTENTE NUEVAMENTE! ");
+                        }
+
+                    }
+
+                } while (repetido == true);
             }
         }
 
@@ -29,12 +46,12 @@ namespace Ejercicio1_Mayor_a_menor
             {
                 for(int i=0; i<9; i++)
                 {
-                    if(num[i]<num[i+1])
+                    if(arreglo[i]<arreglo[i+1])
                     {
                         int aux;
-                        aux = num[i];
-                        num[i] = num[i + 1];
-                        num[i + 1] = aux;
+                        aux = arreglo[i];
+                        arreglo[i] = arreglo[i + 1];
+                        arreglo[i + 1] = aux;
 
                     }
                 }
@@ -45,9 +62,9 @@ namespace Ejercicio1_Mayor_a_menor
         {
             Console.Write("********************************************\n\n");
             Console.WriteLine("Ordenando numeros de Mayor a Menor");
-            for (int i = 0; i < num.Length; i++)
+            for (int i = 0; i < arreglo.Length; i++)
             {
-                Console.WriteLine("*****  "+num[i].ToString());
+                Console.WriteLine("*****  "+arreglo[i].ToString());
             }
             Console.ReadKey();
 
