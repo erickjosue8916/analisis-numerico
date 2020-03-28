@@ -21,8 +21,9 @@ namespace Ejercicio1_Mayor_a_menor
             {
                 do
                 {
-                    Console.WriteLine("Ingrese el numero en la posicion " + i + ":");
-                    dato = int.Parse(Console.ReadLine());
+                    dato=Data.GetIntegerByConsole("Ingrese el numero en la posicion " + i + ":");
+                   /* Console.WriteLine("Ingrese el numero en la posicion " + i + ":");
+                    dato = int.Parse(Console.ReadLine());*/
                     arreglo[i] = dato;
                     repetido = false;
 
@@ -80,6 +81,75 @@ namespace Ejercicio1_Mayor_a_menor
             Console.ReadKey();
 
             
+        }
+    }
+}
+//***********************************************************************************************************//
+class Data
+{
+    public static int GetIntegerByConsole(String message)
+    {
+        try
+        {
+            int number;
+            ConsoleMessage.Print(message, 1);
+            number = int.Parse(Console.ReadLine());
+            return number;
+        }
+        catch (Exception e)
+        {
+            ConsoleMessage.Print("Entrada invalida", 3);
+            return GetIntegerByConsole(message);
+        }
+    }
+    public static double GetDoubleByConsole(String message)
+    {
+        try
+        {
+            double number;
+            ConsoleMessage.Print(message, 1);
+            number = double.Parse(Console.ReadLine());
+            return number;
+        }
+        catch (Exception e)
+        {
+            ConsoleMessage.Print("Entrada invalida", 3);
+            return GetIntegerByConsole(message);
+        }
+    }
+
+    public static String GetStringByConsole(String message)
+    {
+        String data;
+        do
+        {
+            ConsoleMessage.Print(message, 1);
+            data = Console.ReadLine();
+        } while (data == "");
+
+        return data;
+    }
+}
+
+class ConsoleMessage
+{
+    // print message in console 
+    // @Param message: text 
+    // @Param type: 1: inline, 2: oneLine, 3: decorate
+    public static void Print(String message, int type)
+    {
+        switch (type)
+        {
+            case 1:
+                Console.Write(message);
+                break;
+            case 2:
+                Console.WriteLine(message);
+                break;
+            default:
+                message = $"*********************************\n{message}\n*****************************";
+                Console.WriteLine(message);
+                break;
         }
     }
 }
