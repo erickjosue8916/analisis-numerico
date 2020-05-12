@@ -2,63 +2,54 @@
 ## Keny Listbeth Chavez Torres - CT18009
 ## Erick Josué Saravia Aragón - SA18004
 1. Inserte 10 nuevos productos en la tabla products
-> ```sql
->INSERT INTO `products` VALUES (null,"Arroz",1,2,"36 boxe",12,20,3,0,0),(null,"Frijoles",2,2,"26 oz",12,20,3,0,0),(null,"Azucar",3,2,"10 lb",12,20,3,0,0),(null,"Pan",4,2,"10 box",12,20,3,0,0),(null,"Sal",5,2,"10 lb",12,20,3,0,0), (null,"Consome",6,2,"20 oz",12,20,3,0,0), (null,"Leche",7,2,"6 bo",12,20,3,0,0), (null,"Salsa",8,2,"13 box",12,20,3,0,0),(null,"Spagety",9,2,"6 box",12,20,3,0,0),(null,"Maizena",10,2,"10 lb",12,20,3,0,0)
->```
+```sql
+INSERT INTO `products` VALUES (null,"Arroz",1,2,"36 boxe",12,20,3,0,0),(null,"Frijoles",2,2,"26 oz",12,20,3,0,0),(null,"Azucar",3,2,"10 lb",12,20,3,0,0),(null,"Pan",4,2,"10 box",12,20,3,0,0),(null,"Sal",5,2,"10 lb",12,20,3,0,0), (null,"Consome",6,2,"20 oz",12,20,3,0,0), (null,"Leche",7,2,"6 bo",12,20,3,0,0), (null,"Salsa",8,2,"13 box",12,20,3,0,0),(null,"Spagety",9,2,"6 box",12,20,3,0,0),(null,"Maizena",10,2,"10 lb",12,20,3,0,0)
+```
 ![](images/query_01.png)
 
 2. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 3. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 4. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 5. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 6. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 7. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 8. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 9. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 10. 
-> ```sql
->
-> ```
+```sql
+```
 ![](images/query_11.png)
 
 11. Muestre un listado de ordenes (order) el cual debe contener lo siguiente el código
