@@ -57,5 +57,5 @@ de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
 > ```sql
 >select O.OrderID as codigo, C.CompanyName as cliente, O.OrderDate as fechaCompra from Orders as O inner join Customers C on O.CustomerID = C.CustomerID;
 >```
-![result](images/query.png)
+![](https://github.com/erickjosue8916/analisis-numerico/blob/tarea-querys-sql/images/query_11.png)
 
