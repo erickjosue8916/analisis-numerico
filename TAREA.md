@@ -1,5 +1,6 @@
 # Actividad : Consultas SQL
-
+## Keny Listbeth Chavez Torres - CT18009
+## Erick Josué Saravia Aragón - SA18004
 1. Inserte 10 nuevos productos en la tabla products
 > ```sql
 >
@@ -83,63 +84,96 @@ de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
 13. Cree una consulta que muestre el numero de ordenes por cliente
 
 > ```sql
->
+> select C.CompanyName as cliente, COUNT(O.CustomerID) as ordenes from Orders as O inner join Customers C on O.CustomerID = C.CustomerID group by O.CustomerID;
 > ```
 
-![](images/query_11.png)
+![](images/query_13.png)
 
-14.  
+14. Cree una consulta que muestre el listdo de productos cuyo nombre empiece con M
 
 > ```sql
 >
 > ```
 
-![](images/query_11.png)
+![](images/query_14.png)
 
-15. 
+15. Cree una consulta que muestre el listado de productos cuyo nombre termine en una
+vocal
 
-> ```sql
->
-> ```
+ ```sql
+ select * from Products where ProductName LIKE '%a' or ProductName LIKE '%e' or ProductName LIKE '%i' or ProductName LIKE '%o' or ProductName LIKE '%u';
+ ```
 
-![](images/query_11.png)
+![](images/query_15.png)
 
-16. 
+16. Cree una consulta que muestre un listado de productos cuyo nombre tenga una u
 
-> ```sql
->
-> ```
+```sql
+select * from Products where ProductName LIKE '%u%';
+```
 
-![](images/query_11.png)
+![](images/query_16.png)
 
-17. 
+17. Cree una consulta que muestre un listado de productos cuyo UnitsInStock sea igual
+a 0
 
-> ```sql
->
-> ```
+```sql
 
-![](images/query_11.png)
+```
 
-18. 
+![](images/query_17.png)
 
-> ```sql
->
-> ```
+18. Cree una consulta que muestre el detalle de una orden en específico, deberá
+contener los siguientes campos: el código de la orden (OrderID), nombre del
+empleado (firstName), nombre del producto (productName), precio unitario del
+producto (UnitPrice), cantidad (Quantity) y el descuento (Discount). Cada campo
+deberá tener el alias que se indica en el enunciado, el filtro se deberá aplicar según
+él código de la orden 
 
-![](images/query_11.png)
+```sql
+select
+       O.OrderID as codigoOrden,
+       E.FirstName as empleado,
+       P.ProductName as producto,
+       OD.UnitPrice as precioUnitario,
+       OD.Quantity as cantidad,
+       OD.Discount as descuento
+from Orders O
+    inner join Employees E on O.EmployeeID = E.EmployeeID
+    inner join OrderDetails OD on O.OrderID = OD.OrderID
+    inner join Products P on OD.ProductID = P.ProductID
+where O.OrderID = 10258;
+```
 
-19. 
+![](images/query_18.png)
 
-> ```sql
->
-> ```
+19. Cree una consulta que permita visualizar el total por orden deberá mostrar los
+campos. OrderID, total de la orden
 
-![](images/query_11.png)
+```sql
+select O.OrderID as codigo, SUM((OD.Quantity * OD.UnitPrice) * (1 - OD.Discount)) as total from Orders as O join OrderDetails OD on O.OrderID = OD.OrderID group by O.OrderID;
+```
 
-20. 
+![](images/query_19.png)
 
-> ```sql
->
-> ```
+20. Cree una consulta que permita visualizar un reporte de órdenes, queda bajo su
+criterio mostrar los campos más representativos para su reporte
 
-![](images/query_11.png)
+```sql
+select O.OrderID as codigo,
+       C.CompanyName as cliente,
+       CONCAT(E.FirstName, ' ', E.LastName) as vendedor,
+       O.ShipCountry as country,
+       O.ShipCity as city,
+       O.ShipAddress as direccion,
+       O.OrderDate as fechaVenta,
+       SUM(OD.Quantity) as cantidadProductos,
+       SUM((OD.Quantity * OD.UnitPrice) * (1 - OD.Discount)) as total
+from Orders as O
+    join OrderDetails OD on O.OrderID = OD.OrderID
+    join Customers C on O.CustomerID = C.CustomerID
+    join Employees E on O.EmployeeID = E.EmployeeID
+group by O.OrderID;
+```
+
+![](images/query_20.png)
