@@ -6,59 +6,60 @@
 >```
 ![](images/query_01.png)
 
-2. 
+2. Modifique informacion de los productos que acaba de insertar
 > ```sql
->
-> ```
-![](images/query_11.png)
+>UPDATE `products` SET `CategoryID` = '4', `QuantityPerUnit` = '36 lb' WHERE `products`.`ProductID` = 78 UPDATE `products` SET `CategoryID` = '5', `UnitPrice` = '14' WHERE `products`.`ProductID` = 81 UPDATE `products` SET `SupplierID` = '6', `QuantityPerUnit` = '30oz' WHERE `products`.`ProductID` = 79 UPDATE `products` SET `SupplierID` = '6', `CategoryID` = '1' WHERE `products`.`ProductID` = 80 UPDATE `products` SET `SupplierID` = '13', `QuantityPerUnit` = '15 lb', `UnitPrice` = '15' WHERE `products`.`ProductID` = 82 UPDATE `products` SET `CategoryID` = '1', `QuantityPerUnit` = '30oz', `UnitsInStock` = '25' WHERE `products`.`ProductID` = 83 UPDATE `products` SET `QuantityPerUnit` = '8 box', `UnitPrice` = '15', `ReorderLevel` = '1' WHERE `products`.`ProductID` = 84 UPDATE `products` SET `SupplierID` = '26', `QuantityPerUnit` = '15 box', `UnitPrice` = '10', `UnitsInStock` = '30', `ReorderLevel` = '1' WHERE `products`.`ProductID` = 85 UPDATE `products` SET `SupplierID` = '26', `CategoryID` = '1' WHERE `products`.`ProductID` = 86 UPDATE `products` SET `SupplierID` = '12', `QuantityPerUnit` = '15 box' WHERE `products`.`ProductID` = 87
 
-3. 
-> ```sql
->
 > ```
-![](images/query_11.png)
+![](images/query_02.png)
 
-4. 
+3. Elimine los ultimos 5 productos insertados.
 > ```sql
->
+>DELETE FROM `products` WHERE `ProductID`>=83 and  `ProductID`<=87
 > ```
-![](images/query_11.png)
+![](images/query_03.png)
 
-5. 
+4. Seleccione todas las columnas de la tabla products
 > ```sql
->
+>SELECT * FROM 'products'
 > ```
-![](images/query_11.png)
+![](images/query_04.png)
 
-6. 
+5. Muestre el campo ProductName, QuantityPerUnit, y UnitPrice de la tabla Products.
 > ```sql
->
+>SELECT `ProductName`, `QuantityPerUnit`, `UnitPrice` FROM `products` WHERE 1
 > ```
-![](images/query_11.png)
+![](images/query_05.png)
 
-7. 
+6. Muestre los CategoryID que se encuentran en la tabla products.
 > ```sql
->
+>SELECT `CategoryID` FROM `products` WHERE 1
 > ```
-![](images/query_11.png)
+![](images/query_06.png)
 
-8. 
+7. Muestre un listado de las ultimas 10 ordenes de la tabla orders.
 > ```sql
->
+>SELECT * FROM `orders` ORDER BY `OrderID` DESC LIMIT 10
 > ```
-![](images/query_11.png)
+![](images/query_07.png)
 
-9. 
+8. Inserte 10 nuevos empleados en la tabla employees.
 > ```sql
->
+>INSERT INTO `employees` VALUES (NULL,'Torres','Keny','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'),(NULL,'Chavez','Lisbeth','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Morales','Antonio','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'USA','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Villalobos','Roxana','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Guzman','Javier','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Martinez','Guadalupe','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Moraga','Nleson','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Campos','Rafa','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Torres','Kevin','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp'), (NULL,'Perez','Jeff','Hola Mundo','ES','2000-03-20 00:00:00','1992-05-01 00:00:00','Canton El Papalon','San Miguel','WE',1234,'ES','(206) 555-9857',12234,NULL,'Education includes a BA in psychology from Colorado State University in 1970.  She also completed "The Art of the Cold Call."  Nancy is a member of Toastmasters International.',3,'http://accweb/emmployees/davolio.bmp')
 > ```
-![](images/query_11.png)
+![](images/query_08.png)
 
-10. 
+9. Muestre todos los registros de la tabla employees ordenados por el FirtsName de A - Z.
 > ```sql
->
+>SELECT * FROM `employees` ORDER BY `FirstName` ASC 
 > ```
-![](images/query_11.png)
+![](images/query_09.png)
+
+10. Muestre los registros de la tabla employees donde su fecha de cumpleaños (BirthDay) este entre 1960 y 1993.
+> ```sql
+>SELECT * FROM `employees` WHERE `BirthDate` BETWEEN '1960-01-01' AND '1993-12-31'
+> ```
+![](images/query_10.png)
 
 11. Muestre un listado de ordenes (order) el cual debe contener lo siguiente el código
 de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
