@@ -56,9 +56,14 @@ INSERT INTO `products` VALUES (null,"Arroz",1,2,"36 boxe",12,20,3,0,0),(null,"Fr
 de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
 (OrderDate)
 
-> ```sql
->select O.OrderID as codigo, C.CompanyName as cliente, O.OrderDate as fechaCompra from Orders as O inner join Customers C on O.CustomerID = C.CustomerID;
-> ```
+```sql
+select 
+       O.OrderID as codigo, 
+       C.CompanyName as cliente, 
+       O.OrderDate as fechaCompra 
+from Orders as O 
+    inner join Customers C on O.CustomerID = C.CustomerID;
+```
 
 ![](images/query_11.png)
 
@@ -66,17 +71,27 @@ de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
 de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
 (OrderDate).
 
-> ```sql
->select O.OrderID as codigo, C.CompanyName as cliente, O.OrderDate as fechaCompra from Orders as O inner join Customers C on O.CustomerID = C.CustomerID;
-> ```
+```sql
+select 
+       O.OrderID as codigo, 
+       C.CompanyName as cliente, 
+       O.OrderDate as fechaCompra 
+from Orders as O 
+    inner join Customers C on O.CustomerID = C.CustomerID;
+```
 
 ![](images/query_11.png)
 
 13. Cree una consulta que muestre el numero de ordenes por cliente
 
-> ```sql
-> select C.CompanyName as cliente, COUNT(O.CustomerID) as ordenes from Orders as O inner join Customers C on O.CustomerID = C.CustomerID group by O.CustomerID;
-> ```
+```sql
+select 
+       C.CompanyName as cliente, 
+       COUNT(O.CustomerID) as ordenes 
+from Orders as O 
+    inner join Customers C on O.CustomerID = C.CustomerID 
+group by O.CustomerID;
+```
 
 ![](images/query_13.png)
 
@@ -93,9 +108,14 @@ where ProductName like 'M%'
 15. Cree una consulta que muestre el listado de productos cuyo nombre termine en una
 vocal
 
- ```sql
- select * from Products where ProductName LIKE '%a' or ProductName LIKE '%e' or ProductName LIKE '%i' or ProductName LIKE '%o' or ProductName LIKE '%u';
- ```
+```sql
+select * from Products 
+where ProductName LIKE '%a' or 
+      ProductName LIKE '%e' or 
+      ProductName LIKE '%i' or 
+      ProductName LIKE '%o' or 
+      ProductName LIKE '%u';
+```
 
 ![](images/query_15.png)
 
