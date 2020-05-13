@@ -82,9 +82,11 @@ de orden (orderID), el nombre del cliente (contactName) y la fecha de orden
 
 14. Cree una consulta que muestre el listdo de productos cuyo nombre empiece con M
 
-> ```sql
->
-> ```
+```sql
+select *
+from Products
+where ProductName like 'M%'
+```
 
 ![](images/query_14.png)
 
@@ -109,7 +111,9 @@ select * from Products where ProductName LIKE '%u%';
 a 0
 
 ```sql
-
+select * 
+from Products 
+where UnitsInStock = 0
 ```
 
 ![](images/query_17.png)
@@ -142,7 +146,11 @@ where O.OrderID = 10258;
 campos. OrderID, total de la orden
 
 ```sql
-select O.OrderID as codigo, SUM((OD.Quantity * OD.UnitPrice) * (1 - OD.Discount)) as total from Orders as O join OrderDetails OD on O.OrderID = OD.OrderID group by O.OrderID;
+select O.OrderID as codigo, 
+    SUM((OD.Quantity * OD.UnitPrice) * (1 - OD.Discount)) as total 
+from Orders as O 
+join OrderDetails OD on O.OrderID = OD.OrderID 
+group by O.OrderID;
 ```
 
 ![](images/query_19.png)
