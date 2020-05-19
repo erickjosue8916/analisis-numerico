@@ -1,0 +1,10 @@
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\bin\Debug\Muller.exe.config
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\bin\Debug\Muller.exe
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\bin\Debug\NCalc.dll
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.csprojAssemblyReference.cache
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.Form1.resources
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.Properties.Resources.resources
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.csproj.GenerateResource.cache
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.csproj.CopyComplete
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.exe
+C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Muller\Muller\obj\Debug\Muller.pdb
