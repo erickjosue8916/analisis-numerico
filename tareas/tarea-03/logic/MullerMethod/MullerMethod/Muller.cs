@@ -1,11 +1,15 @@
 using System;
 using System.Collections;
+using NCalc;
+
 namespace MullerMethod
 {
     class Muller
     {
-        private Funcion expression;
-        private double maxIteraciones = 5;
+        private String expression;
+        private double maxIteraciones;
+        private double maxError;
+        private double iteracionActual;
         private double x0;
         private double x1;
         private double x2;
@@ -24,15 +28,18 @@ namespace MullerMethod
         public bool resuelto;
         public String message;
         public ArrayList historial;
+        
 
-
-        public Muller(Funcion expression)
+        public Muller(String expression, int maxIteraciones, double maxError)
         {
             this.expression = expression;
+            this.maxIteraciones = maxIteraciones;
+            this.maxError = maxError;
+            this.iteracionActual = 1;
             this.historial = new ArrayList();
-            this.historial.Add($"define expresion como {this.expression.text}");
-            this.setVaribles(1, 2, 1.5);
-            this.calcularX3();           
+        
+            this.historial.Add($"define expresion como {expression}");
+            this.calcularX3(1, 2, 1.5);           
         }
 
         private void setVaribles(double x0, double x1, double x2)
@@ -48,15 +55,15 @@ namespace MullerMethod
             
         }
 
-        private void defiinirVariables()
+        private void definirVariables()
         {
-            this.f0 = expression.evaluar(this.x0);
+            this.f0 = evaluar(this.x0);
             this.historial.Add($"define f({x0}) = {f0}");
             
-            this.f1 = expression.evaluar(this.x1);
+            this.f1 = evaluar(this.x1);
             this.historial.Add($"define f({x1}) = {f1}");
             
-            this.f2 = expression.evaluar(this.x2);
+            this.f2 = evaluar(this.x2);
             this.historial.Add($"define f({x2}) = {f2}");
             
             this.h0 = this.x1 - this.x0;
@@ -81,9 +88,11 @@ namespace MullerMethod
             this.historial.Add($"define c = {c}");
         }
 
-        private void calcularX3()
+        private void calcularX3(double x0, double x1, double x2)
         {
-            this.defiinirVariables();
+            
+            this.setVaribles(x0, x1, x2);
+            this.definirVariables();
             double bajoRaiz = (this.b * this.b) - 4 * (this.a * this.c);
             this.historial.Add($"define raiz(interno) = {bajoRaiz}");
             if (bajoRaiz < 0)
@@ -100,11 +109,41 @@ namespace MullerMethod
             double denominador = (denominadorConSignoMas < denominadorConSignoMenos) ? denominadorConSignoMas : denominadorConSignoMenos;
             if (this.b < 0) b *= -1;
             this.x3 = this.x2 + ((-2 * this.c) / denominador);
+            this.x3 = Math.Round(this.x3 * 100) / 100;
             this.historial.Add($"solucion x3 = {x3}");
             this.errorAproximacion = Math.Abs((this.x3 - this.x2) / this.x3) * 100;
             this.historial.Add($"error = {this.errorAproximacion}%");
+            if (errorAproximacion <= maxError)
+            {
+                this.historial.Add($"respuesta encontrada X3 = {this.x3}, iterciones {this.iteracionActual}");
+                
+            } else if (iteracionActual <= maxIteraciones)
+            {
+                this.iteracionActual++;
+                this.historial.Add($"error no aceptable = {this.errorAproximacion}, realizar nueva iteracion");
+                this.historial.Add($"Corriendo valores x0 = x1, x1 = x2, x2 = x3 ");
+                this.calcularX3(this.x1, this.x2, this.x3);
+            }
+            else
+            {
+                this.historial.Add($"error no aceptable = {this.errorAproximacion}, maximo de iteraciones realizadas");
+            }
         }
 
+        public double evaluar(double x)
+        {
+            String e = this.expression;
+            e = e.Replace("x", x.ToString());
+            Expression exp = new Expression(e);
+            return double.Parse(exp.Evaluate().ToString());
+        }
+
+        public static double redondeo(double numero, double decimales)
+        {
+            double d = Math.Pow(10, decimales);
+            return (Math.Round(numero * d) / d);
+        }
+        
     }
     
 }
