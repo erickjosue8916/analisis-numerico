@@ -9,3 +9,15 @@ C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Metodo-M
 C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.pdb
 C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\bin\Debug\NCalc.dll
 C:\Users\torre\OneDrive\Escritorio\BD\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.csproj.CopyComplete
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\bin\Debug\Metodo-Muller_form.exe.config
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\bin\Debug\Metodo-Muller_form.exe
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\bin\Debug\Metodo-Muller_form.pdb
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\bin\Debug\NCalc.dll
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.csprojAssemblyReference.cache
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo_Muller_form.Form1.resources
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo_Muller_form.Properties.Resources.resources
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.csproj.GenerateResource.cache
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.csproj.CoreCompileInputs.cache
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.csproj.CopyComplete
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.exe
+C:\Users\Jorge\Documents\ERICK\clase\analisis numerico\analisis-numerico\tareas\tarea-03\Metodo-Muller_form\Metodo-Muller_form\obj\Debug\Metodo-Muller_form.pdb

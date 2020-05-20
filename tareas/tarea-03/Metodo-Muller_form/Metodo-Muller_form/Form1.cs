@@ -20,9 +20,12 @@ namespace Metodo_Muller_form
         {
             Muller m = new Muller(expression, maxIteraciones, maxError);
 
-            /*var total = m.x3;
-            
-            MessageBox.Show("El total es" + total);*/
+            var total = m.x3;
+            foreach (var item in m.historial)
+            {
+                Console.WriteLine(item);
+            }
+            MessageBox.Show($"El total es {total}");
             Console.WriteLine("holis" + m.x3);
             
         }
@@ -36,7 +39,7 @@ namespace Metodo_Muller_form
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtExpresion.Text += ("Pow(x, ingrese la potencia)");
+            txtExpresion.Text += ("Pow(x, y)");
         }
 
         private void button2_Click(object sender, EventArgs e)
