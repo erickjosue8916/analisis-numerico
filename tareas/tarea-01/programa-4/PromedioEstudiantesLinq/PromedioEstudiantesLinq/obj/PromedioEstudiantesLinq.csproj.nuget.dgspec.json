@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj": {}
+    "C:\\Users\\torre\\OneDrive\\Escritorio\\BD\\analisis-numerico\\tareas\\tarea-01\\programa-4\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq.csproj": {}
   },
   "projects": {
-    "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj": {
+    "C:\\Users\\torre\\OneDrive\\Escritorio\\BD\\analisis-numerico\\tareas\\tarea-01\\programa-4\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj",
+        "projectUniqueName": "C:\\Users\\torre\\OneDrive\\Escritorio\\BD\\analisis-numerico\\tareas\\tarea-01\\programa-4\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq.csproj",
         "projectName": "PromedioEstudiantesLinq",
-        "projectPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/PromedioEstudiantesLinq.csproj",
-        "packagesPath": "/home/erick/.nuget/packages/",
-        "outputPath": "/home/erick/RiderProjects/analisis-numerico/tareas/tarea-01/programa-4/PromedioEstudiantesLinq/PromedioEstudiantesLinq/obj/",
+        "projectPath": "C:\\Users\\torre\\OneDrive\\Escritorio\\BD\\analisis-numerico\\tareas\\tarea-01\\programa-4\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq.csproj",
+        "packagesPath": "C:\\Users\\torre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\torre\\OneDrive\\Escritorio\\BD\\analisis-numerico\\tareas\\tarea-01\\programa-4\\PromedioEstudiantesLinq\\PromedioEstudiantesLinq\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/home/erick/.config/NuGet/NuGet.Config"
+          "C:\\Users\\torre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

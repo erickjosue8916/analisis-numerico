@@ -25,10 +25,24 @@ namespace Metodo_Muller_form
             {
                 Console.WriteLine(item);
             }
-            MessageBox.Show($"El total es {total}");
-            
+            MessageBox.Show($"El total es {total}","Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            limpiarGrafica();
+            for (double i = 0; i < 5; i += 0.1)
+            {
+
+                grafica.Series[0].Points.AddXY(i, m.evaluar(i));
+            }
+
         }
-        
+
+        public void limpiarGrafica()
+        {
+            foreach (var series in grafica.Series)
+            {
+                series.Points.Clear();
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -53,21 +67,44 @@ namespace Metodo_Muller_form
 
         private void button4_Click(object sender, EventArgs e)
         {
-           
-           string expression = txtExpresion.Text;
-           int maxIteraciones = int.Parse(txtMaxItera.Text);
-           double maxError = double.Parse(txtMaxError.Text);
+            if(txtExpresion.Text=="" || txtMaxItera.Text=="" || txtMaxError.Text=="" )
+            {
+                MessageBox.Show("Ingrese todos los datos");
+            }
+            else
+            {
+                string expression = txtExpresion.Text;
+                int maxIteraciones = int.Parse(txtMaxItera.Text);
+                double maxError = double.Parse(txtMaxError.Text);
 
-            ejecutar(expression, maxIteraciones, maxError);
-           
-            
-
+                ejecutar(expression, maxIteraciones, maxError);
+            }
 
         }
 
+     
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-          
+            
+        }
+
+        private void txtMaxItera_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back))
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtMaxError_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar.ToString() != ".")
+            {
+                e.Handled = true;
+                return;
+            }
         }
     }
 }

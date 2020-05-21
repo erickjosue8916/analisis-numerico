@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtExpresion = new System.Windows.Forms.TextBox();
@@ -38,19 +38,19 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtMaxError = new System.Windows.Forms.TextBox();
+            this.txtMaxItera = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtMaxItera = new System.Windows.Forms.TextBox();
-            this.txtMaxError = new System.Windows.Forms.TextBox();
+            this.grafica = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grafica)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -107,7 +107,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
-            this.button2.Text = "√ n-esima";
+            this.button2.Text = "√ x";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -141,6 +141,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Funcion";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtMaxError);
+            this.groupBox3.Controls.Add(this.txtMaxItera);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Location = new System.Drawing.Point(10, 102);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(456, 93);
+            this.groupBox3.TabIndex = 8;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Ingresar";
+            // 
+            // txtMaxError
+            // 
+            this.txtMaxError.Location = new System.Drawing.Point(250, 51);
+            this.txtMaxError.Multiline = true;
+            this.txtMaxError.Name = "txtMaxError";
+            this.txtMaxError.Size = new System.Drawing.Size(166, 26);
+            this.txtMaxError.TabIndex = 7;
+            this.txtMaxError.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxError_KeyPress);
+            // 
+            // txtMaxItera
+            // 
+            this.txtMaxItera.Location = new System.Drawing.Point(249, 19);
+            this.txtMaxItera.Multiline = true;
+            this.txtMaxItera.Name = "txtMaxItera";
+            this.txtMaxItera.Size = new System.Drawing.Size(166, 26);
+            this.txtMaxItera.TabIndex = 6;
+            this.txtMaxItera.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtMaxItera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxItera_KeyPress);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Yellow;
+            this.label5.Location = new System.Drawing.Point(116, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 15);
+            this.label5.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.Location = new System.Drawing.Point(6, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(224, 15);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Ingrese el numero de iteraciones:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Yellow;
+            this.label3.Location = new System.Drawing.Point(6, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(238, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Ingrese el maximo margen de error:";
+            // 
             // button4
             // 
             this.button4.AutoEllipsis = true;
@@ -160,7 +225,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.chart1);
+            this.groupBox2.Controls.Add(this.grafica);
             this.groupBox2.Location = new System.Drawing.Point(130, 299);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(384, 326);
@@ -168,89 +233,26 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Grafica";
             // 
-            // chart1
+            // grafica
             // 
-            this.chart1.BorderlineColor = System.Drawing.Color.Black;
-            this.chart1.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(47, 19);
-            this.chart1.Name = "chart1";
-            series2.BorderColor = System.Drawing.Color.Yellow;
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
-            this.chart1.TabIndex = 0;
-            this.chart1.Text = "chart1";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.txtMaxError);
-            this.groupBox3.Controls.Add(this.txtMaxItera);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(10, 102);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(456, 93);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Ingresar";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(6, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Ingrese el maximo margen de error:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(6, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 15);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Ingrese el numero de iteraciones:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Yellow;
-            this.label5.Location = new System.Drawing.Point(116, 39);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 15);
-            this.label5.TabIndex = 5;
-            // 
-            // txtMaxItera
-            // 
-            this.txtMaxItera.Location = new System.Drawing.Point(249, 19);
-            this.txtMaxItera.Multiline = true;
-            this.txtMaxItera.Name = "txtMaxItera";
-            this.txtMaxItera.Size = new System.Drawing.Size(166, 26);
-            this.txtMaxItera.TabIndex = 6;
-            this.txtMaxItera.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // txtMaxError
-            // 
-            this.txtMaxError.Location = new System.Drawing.Point(250, 51);
-            this.txtMaxError.Multiline = true;
-            this.txtMaxError.Name = "txtMaxError";
-            this.txtMaxError.Size = new System.Drawing.Size(166, 26);
-            this.txtMaxError.TabIndex = 7;
+            this.grafica.BorderlineColor = System.Drawing.Color.Black;
+            this.grafica.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea3.Name = "ChartArea1";
+            this.grafica.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.grafica.Legends.Add(legend3);
+            this.grafica.Location = new System.Drawing.Point(47, 19);
+            this.grafica.Name = "grafica";
+            series3.BorderColor = System.Drawing.Color.Yellow;
+            series3.BorderWidth = 3;
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.grafica.Series.Add(series3);
+            this.grafica.Size = new System.Drawing.Size(300, 300);
+            this.grafica.TabIndex = 0;
+            this.grafica.Text = "grafica";
             // 
             // Form1
             // 
@@ -266,10 +268,10 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grafica)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,7 +288,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart grafica;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtMaxError;
         private System.Windows.Forms.TextBox txtMaxItera;
