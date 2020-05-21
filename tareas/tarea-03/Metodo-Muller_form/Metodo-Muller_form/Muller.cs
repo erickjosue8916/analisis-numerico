@@ -108,14 +108,14 @@ namespace Metodo_Muller_form
             }
             //resuelto = true;
             double b = Math.Sqrt(bajoRaiz);
-            double denominadorConSignoMas = (this.b) + b;
+            double denominadorConSignoMas = Math.Abs((this.b) + b);
             this.historial.Add($"Calculando denominador con signo positivo = {denominadorConSignoMas} ");
-            double denominadorConSignoMenos = (this.b) - b;
+            double denominadorConSignoMenos = Math.Abs((this.b) - b);
             this.historial.Add($"Calculando denominador con signo menos = {denominadorConSignoMenos} ");
             double denominador = (denominadorConSignoMas > denominadorConSignoMenos) ? denominadorConSignoMas : denominadorConSignoMenos;
-            this.historial.Add($"Calculando denominador mas bajo (utilizar) = {denominadorConSignoMenos} ");
+            this.historial.Add($"Calculando denominador mas alto (utilizar) = {denominadorConSignoMenos} ");
             
-            if (this.b < 0) b *= -1;
+            // if (this.b < 0) b *= -1;
 
             this.x3 = this.x2 + ((-2 * this.c) / denominador);
             this.historial.Add($"Calcular x3 = x2 + ( -2c ) / (b (+-) Sqrt(b^2 - 4ac)) ");
@@ -123,19 +123,19 @@ namespace Metodo_Muller_form
             this.historial.Add($"solucion x3 = {x3}");
             this.errorAproximacion = Math.Abs((this.x3 - this.x2) / this.x3) * 100;
             this.historial.Add($"error = {this.errorAproximacion}%");
-            if (errorAproximacion <= maxError)
+            if (errorAproximacion <= maxError) // respuesta encontrada
             {
-                this.historial.Add($"respuesta encontrada X3 = {this.x3}, iterciones {this.iteracionActual}");
+                this.historial.Add($"respuesta encontrada X3 = {this.x3} + {this.errorAproximacion} , iterciones {this.iteracionActual}");
 
             }
-            else if (iteracionActual <= maxIteraciones)
+            else if (iteracionActual <= maxIteraciones) // error no aceptable 
             {
                 this.iteracionActual++;
                 this.historial.Add($"error no aceptable = {this.errorAproximacion}, realizar la iteracion: {this.iteracionActual}");
                 this.historial.Add($"Corriendo valores x0 = x1, x1 = x2, x2 = x3 ");
                 this.calcularX3(this.x1, this.x2, this.x3);
             }
-            else
+            else // error no aceptable no hay mas repeticiones 
             {
                 this.historial.Add($"error no aceptable = {this.errorAproximacion}, maximo de iteraciones realizadas");
             }
