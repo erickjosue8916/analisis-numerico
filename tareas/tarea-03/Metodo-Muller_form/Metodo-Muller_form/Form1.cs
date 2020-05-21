@@ -18,7 +18,7 @@ namespace Metodo_Muller_form
     {
        public void ejecutar (String expression, int maxIteraciones, double maxError)
         {
-            Muller m = new Muller(expression, maxIteraciones, maxError);
+            Muller m = new Muller(expression, maxIteraciones, maxError, 1, 2, 1.5);
 
             var total = m.x3;
             foreach (var item in m.historial)
@@ -26,7 +26,6 @@ namespace Metodo_Muller_form
                 Console.WriteLine(item);
             }
             MessageBox.Show($"El total es {total}");
-            Console.WriteLine("holis" + m.x3);
             
         }
         

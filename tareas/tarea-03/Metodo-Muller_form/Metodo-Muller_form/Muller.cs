@@ -34,7 +34,7 @@ namespace Metodo_Muller_form
         public ArrayList historial;
 
 
-        public Muller(String expression, int maxIteraciones, double maxError)
+        public Muller(String expression, int maxIteraciones, double maxError, double x1, double x2, double x3)
         {
             this.expression = expression;
             this.maxIteraciones = maxIteraciones;
@@ -43,7 +43,7 @@ namespace Metodo_Muller_form
             this.historial = new ArrayList();
 
             this.historial.Add($"define expresion como {expression}");
-            this.calcularX3(1, 2, 1.5);
+            this.calcularX3(x1, x2, x3);
         }
 
         private void setVaribles(double x0, double x1, double x2)
@@ -112,7 +112,7 @@ namespace Metodo_Muller_form
             this.historial.Add($"Calculando denominador con signo positivo = {denominadorConSignoMas} ");
             double denominadorConSignoMenos = (this.b) - b;
             this.historial.Add($"Calculando denominador con signo menos = {denominadorConSignoMenos} ");
-            double denominador = (denominadorConSignoMas < denominadorConSignoMenos) ? denominadorConSignoMas : denominadorConSignoMenos;
+            double denominador = (denominadorConSignoMas > denominadorConSignoMenos) ? denominadorConSignoMas : denominadorConSignoMenos;
             this.historial.Add($"Calculando denominador mas bajo (utilizar) = {denominadorConSignoMenos} ");
             
             if (this.b < 0) b *= -1;
