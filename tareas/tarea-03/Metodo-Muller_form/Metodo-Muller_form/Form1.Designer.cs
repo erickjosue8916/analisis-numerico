@@ -1,6 +1,6 @@
 ﻿namespace Metodo_Muller_form
 {
-    partial class Form1
+    partial class App
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtExpresion = new System.Windows.Forms.TextBox();
@@ -38,6 +38,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtx1 = new System.Windows.Forms.TextBox();
+            this.txtx2 = new System.Windows.Forms.TextBox();
+            this.txtx0 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtMaxError = new System.Windows.Forms.TextBox();
             this.txtMaxItera = new System.Windows.Forms.TextBox();
@@ -69,7 +76,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(7, 36);
+            this.label2.Location = new System.Drawing.Point(7, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 18);
             this.label2.TabIndex = 2;
@@ -77,10 +84,10 @@
             // 
             // txtExpresion
             // 
-            this.txtExpresion.Location = new System.Drawing.Point(169, 15);
+            this.txtExpresion.Location = new System.Drawing.Point(170, 19);
             this.txtExpresion.Multiline = true;
             this.txtExpresion.Name = "txtExpresion";
-            this.txtExpresion.Size = new System.Drawing.Size(256, 81);
+            this.txtExpresion.Size = new System.Drawing.Size(256, 26);
             this.txtExpresion.TabIndex = 3;
             // 
             // button1
@@ -127,12 +134,19 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtx1);
+            this.groupBox1.Controls.Add(this.txtx2);
+            this.groupBox1.Controls.Add(this.txtx0);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtExpresion);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.txtExpresion);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Location = new System.Drawing.Point(32, 45);
             this.groupBox1.Name = "groupBox1";
@@ -140,6 +154,78 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Funcion";
+            // 
+            // txtx1
+            // 
+            this.txtx1.Location = new System.Drawing.Point(312, 51);
+            this.txtx1.Multiline = true;
+            this.txtx1.Name = "txtx1";
+            this.txtx1.Size = new System.Drawing.Size(38, 26);
+            this.txtx1.TabIndex = 15;
+            this.txtx1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtx1_KeyPress);
+            // 
+            // txtx2
+            // 
+            this.txtx2.Location = new System.Drawing.Point(388, 51);
+            this.txtx2.Multiline = true;
+            this.txtx2.Name = "txtx2";
+            this.txtx2.Size = new System.Drawing.Size(38, 26);
+            this.txtx2.TabIndex = 14;
+            this.txtx2.TextChanged += new System.EventHandler(this.txtx2_TextChanged);
+            this.txtx2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtx2_KeyPress);
+            // 
+            // txtx0
+            // 
+            this.txtx0.Location = new System.Drawing.Point(232, 51);
+            this.txtx0.Multiline = true;
+            this.txtx0.Name = "txtx0";
+            this.txtx0.Size = new System.Drawing.Size(38, 26);
+            this.txtx0.TabIndex = 13;
+            this.txtx0.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtx0_KeyPress);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.7F, System.Drawing.FontStyle.Italic);
+            this.label9.ForeColor = System.Drawing.Color.Yellow;
+            this.label9.Location = new System.Drawing.Point(284, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(22, 15);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "x1";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.7F, System.Drawing.FontStyle.Italic);
+            this.label8.ForeColor = System.Drawing.Color.Yellow;
+            this.label8.Location = new System.Drawing.Point(204, 62);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 15);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "x0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.7F, System.Drawing.FontStyle.Italic);
+            this.label7.ForeColor = System.Drawing.Color.Yellow;
+            this.label7.Location = new System.Drawing.Point(360, 62);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(22, 15);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "x2";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.7F, System.Drawing.FontStyle.Italic);
+            this.label6.ForeColor = System.Drawing.Color.Yellow;
+            this.label6.Location = new System.Drawing.Point(7, 62);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(191, 15);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Ingrese los valores iniciales:\r\n";
             // 
             // groupBox3
             // 
@@ -166,12 +252,11 @@
             // 
             // txtMaxItera
             // 
-            this.txtMaxItera.Location = new System.Drawing.Point(249, 19);
+            this.txtMaxItera.Location = new System.Drawing.Point(250, 19);
             this.txtMaxItera.Multiline = true;
             this.txtMaxItera.Name = "txtMaxItera";
             this.txtMaxItera.Size = new System.Drawing.Size(166, 26);
             this.txtMaxItera.TabIndex = 6;
-            this.txtMaxItera.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txtMaxItera.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMaxItera_KeyPress);
             // 
             // label5
@@ -237,24 +322,24 @@
             // 
             this.grafica.BorderlineColor = System.Drawing.Color.Black;
             this.grafica.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea3.Name = "ChartArea1";
-            this.grafica.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.grafica.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.grafica.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.grafica.Legends.Add(legend4);
             this.grafica.Location = new System.Drawing.Point(47, 19);
             this.grafica.Name = "grafica";
-            series3.BorderColor = System.Drawing.Color.Yellow;
-            series3.BorderWidth = 3;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.grafica.Series.Add(series3);
+            series4.BorderColor = System.Drawing.Color.Yellow;
+            series4.BorderWidth = 3;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.grafica.Series.Add(series4);
             this.grafica.Size = new System.Drawing.Size(300, 300);
             this.grafica.TabIndex = 0;
             this.grafica.Text = "grafica";
             // 
-            // Form1
+            // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -264,8 +349,8 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "App";
+            this.Text = "App";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -295,6 +380,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtx1;
+        private System.Windows.Forms.TextBox txtx2;
+        private System.Windows.Forms.TextBox txtx0;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
 

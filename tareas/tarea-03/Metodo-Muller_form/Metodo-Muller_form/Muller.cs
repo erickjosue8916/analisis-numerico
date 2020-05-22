@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
 using NCalc;
+using System.Windows.Forms;
 
 namespace Metodo_Muller_form
 {
@@ -123,10 +124,11 @@ namespace Metodo_Muller_form
             this.historial.Add($"solucion x3 = {x3}");
             this.errorAproximacion = Math.Abs((this.x3 - this.x2) / this.x3) * 100;
             this.historial.Add($"error = {this.errorAproximacion}%");
+
             if (errorAproximacion <= maxError) // respuesta encontrada
             {
                 this.historial.Add($"respuesta encontrada X3 = {this.x3} + {this.errorAproximacion} , iterciones {this.iteracionActual}");
-
+                MessageBox.Show($"El valor de la raiz es: {this.x3}", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (iteracionActual <= maxIteraciones) // error no aceptable 
             {
@@ -138,6 +140,7 @@ namespace Metodo_Muller_form
             else // error no aceptable no hay mas repeticiones 
             {
                 this.historial.Add($"error no aceptable = {this.errorAproximacion}, maximo de iteraciones realizadas");
+                MessageBox.Show($"Se alcanzo el numero maximo de iteraciones, no se pudo encontrar la raiz debido a que el margen de error aun es mas alto al ingresado. Margen de error hasta la ultima iteracion: {this.errorAproximacion}", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

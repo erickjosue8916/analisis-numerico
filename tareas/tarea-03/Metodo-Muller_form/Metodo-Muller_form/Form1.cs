@@ -9,33 +9,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
 using NCalc;
-
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Metodo_Muller_form
 {
    
-    public partial class Form1 : Form
+    public partial class App : Form
     {
-       public void ejecutar (String expression, int maxIteraciones, double maxError)
+        public void ejecutar (String expression, int maxIteraciones, double maxError, double x0, double x1, double x2)
         {
-            Muller m = new Muller(expression, maxIteraciones, maxError, 1, 2, 1.5);
+            Muller m = new Muller(expression, maxIteraciones, maxError, x0, x1, x2);
 
-            var total = m.x3;
             foreach (var item in m.historial)
             {
                 Console.WriteLine(item);
             }
-            MessageBox.Show($"El total es {total}","Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             limpiarGrafica();
-            for (double i = 0; i < 5; i += 0.1)
+            for (double i = 0; i < 4; i += 0.01)
             {
-
                 grafica.Series[0].Points.AddXY(i, m.evaluar(i));
             }
-
         }
-
         public void limpiarGrafica()
         {
             foreach (var series in grafica.Series)
@@ -43,16 +38,15 @@ namespace Metodo_Muller_form
                 series.Points.Clear();
             }
         }
-        public Form1()
+        public App()
         {
             InitializeComponent();
 
-           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtExpresion.Text += ("Pow(x, y)");
+            txtExpresion.Text += ("Pow(x, potencia)");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -69,25 +63,25 @@ namespace Metodo_Muller_form
         {
             if(txtExpresion.Text=="" || txtMaxItera.Text=="" || txtMaxError.Text=="" )
             {
-                MessageBox.Show("Ingrese todos los datos");
+                MessageBox.Show($"Ingrese todos los datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 string expression = txtExpresion.Text;
+                double x0 = double.Parse(txtx0.Text);
+                double x1 = double.Parse(txtx1.Text);
+                double x2 = double.Parse(txtx2.Text);
                 int maxIteraciones = int.Parse(txtMaxItera.Text);
                 double maxError = double.Parse(txtMaxError.Text);
 
-                ejecutar(expression, maxIteraciones, maxError);
+                ejecutar(expression, maxIteraciones, maxError, x0, x1, x2);
             }
 
         }
 
-     
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
+
+        //Validaciones-----------------------------------------------------------
 
         private void txtMaxItera_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -101,6 +95,38 @@ namespace Metodo_Muller_form
         private void txtMaxError_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar.ToString() != ".")
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtx1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar.ToString() != "." && e.KeyChar.ToString() != "-")
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtx0_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar.ToString() != "." && e.KeyChar.ToString() != "-")
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtx2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtx2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar)) && (e.KeyChar != (char)Keys.Back) && e.KeyChar.ToString() != "." && e.KeyChar.ToString() != "-")
             {
                 e.Handled = true;
                 return;
