@@ -26,7 +26,7 @@ namespace Metodo_Muller_form
             }
 
             limpiarGrafica();
-            for (double i = 0; i < 4; i += 0.01)
+            for (double i = -3; i < 3; i += 0.5)
             {
                 grafica.Series[0].Points.AddXY(i, m.evaluar(i));
             }

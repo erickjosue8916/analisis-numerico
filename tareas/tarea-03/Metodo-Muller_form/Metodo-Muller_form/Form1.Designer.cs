@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtExpresion = new System.Windows.Forms.TextBox();
@@ -96,7 +96,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(472, 13);
+            this.button1.Location = new System.Drawing.Point(483, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 4;
@@ -110,7 +110,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(472, 42);
+            this.button2.Location = new System.Drawing.Point(483, 42);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -124,7 +124,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(472, 71);
+            this.button3.Location = new System.Drawing.Point(483, 71);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
@@ -311,9 +311,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.grafica);
-            this.groupBox2.Location = new System.Drawing.Point(130, 299);
+            this.groupBox2.Location = new System.Drawing.Point(32, 299);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(384, 326);
+            this.groupBox2.Size = new System.Drawing.Size(575, 326);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Grafica";
@@ -322,20 +322,20 @@
             // 
             this.grafica.BorderlineColor = System.Drawing.Color.Black;
             this.grafica.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea4.Name = "ChartArea1";
-            this.grafica.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.grafica.Legends.Add(legend4);
-            this.grafica.Location = new System.Drawing.Point(47, 19);
+            chartArea1.Name = "ChartArea1";
+            this.grafica.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.grafica.Legends.Add(legend1);
+            this.grafica.Location = new System.Drawing.Point(19, 19);
             this.grafica.Name = "grafica";
-            series4.BorderColor = System.Drawing.Color.Yellow;
-            series4.BorderWidth = 3;
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.grafica.Series.Add(series4);
-            this.grafica.Size = new System.Drawing.Size(300, 300);
+            series1.BorderColor = System.Drawing.Color.Yellow;
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.grafica.Series.Add(series1);
+            this.grafica.Size = new System.Drawing.Size(539, 300);
             this.grafica.TabIndex = 0;
             this.grafica.Text = "grafica";
             // 
