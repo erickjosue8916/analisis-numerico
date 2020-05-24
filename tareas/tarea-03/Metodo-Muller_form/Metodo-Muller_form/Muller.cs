@@ -33,7 +33,7 @@ namespace Metodo_Muller_form
         public bool resuelto;
         public String message;
         public ArrayList historial;
-
+        public string parabola;
 
         public Muller(String expression, int maxIteraciones, double maxError, double x1, double x2, double x3)
         {
@@ -127,6 +127,7 @@ namespace Metodo_Muller_form
 
             if (errorAproximacion <= maxError) // respuesta encontrada
             {
+                this.parabola = $"{this.a} * Pow(x - {this.x2}, 2) + {this.b} * (x - {this.x2}) + { this.c }";
                 this.historial.Add($"respuesta encontrada X3 = {this.x3} + {this.errorAproximacion} , iterciones {this.iteracionActual}");
                 MessageBox.Show($"El valor de la raiz es: {this.x3}", "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -147,6 +148,14 @@ namespace Metodo_Muller_form
         public double evaluar(double x)
         {
             String e = this.expression;
+            e = e.Replace("x", x.ToString());
+            Expression exp = new Expression(e);
+            return double.Parse(exp.Evaluate().ToString());
+        }
+
+        public double evaluarParabola(double x)
+        {
+            String e = this.parabola;
             e = e.Replace("x", x.ToString());
             Expression exp = new Expression(e);
             return double.Parse(exp.Evaluate().ToString());
